@@ -1,0 +1,55 @@
+//==============================================================================================================================================================================================================================================
+//							HELLO WORLD USING OPENVG IN C++ 
+//==============================================================================================================================================================================================================================================
+// first OpenVG program
+// Anthony Starks (ajstarks@gmail.com)
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <iostream>
+extern "C" {   //this  allows you to use OpenVG in C++ code;
+#include "VG/openvg.h"
+#include "VG/vgu.h"
+#include "fontinfo.h"
+#include "shapes.h"
+}
+
+
+using namespace std;
+
+int main() {
+	int width, height;
+	char s[3];
+
+	init(&width, &height);								// Graphics initialization //how big  wigth and heigth are screen
+for(int i=0;i<100;i++){									//10 second apearing Loop of hello world on your screen 
+	Start(width, height);								// Start the picture
+	Background(0+(i*2), 0+(i*2), 0+(i*2));						// From black to white background using RGB system
+	Fill(44, 77, 232, 1);								// Big blue marble
+	Circle(width / 2, 0, width);							// The "world"
+	Fill(255, 255, 255, 1);								// White text
+	TextMid(width / 2, height / 2, "hello, world", SerifTypeface, width / 10);	// Greetings 
+	End();		// End the picture
+	}										//End of 10 second apearing Loop
+	fgets(s, 2, stdin);				   				// look at the pic, end with [RETURN]
+	finish();					           			// Graphics cleanup
+	exit(0);
+}
+
+
+
+
+//==============================================================================================================================================================================================================================================
+//								MAKEFILE
+//==============================================================================================================================================================================================================================================
+/*
+#NOT IDEAL MAKEFILE BUT WORKING!!!!!
+#ALSO MAKEFILE MUST BE IN THE SAME FOLDER AS MAIN PROJECT FILE/FILES
+INCLUDEFLAGS = -I/opt/vc/include -I/opt/vc/include/interface/vmcs_host/linux -I/opt/vc/include/interface/vcos/pthreads -I/home/pi/openvg
+LIBFLAGS = -L/opt/vc/lib -lbrcmEGL -lbrcmGLESv2 -lbcm_host -lpthread  -ljpeg
+main:main.cpp 
+		g++ -Wall $(INCLUDEFLAGS) -o main  main.cpp $(LIBFLAGS) /home/pi/openvg/libshapes.o /home/pi/openvg/oglinit.o
+*/
+
+
+
