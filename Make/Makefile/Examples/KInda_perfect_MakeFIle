@@ -1,0 +1,24 @@
+#Build&Run opens the exe not in console and it couses freezed monitor where only reboot helps
+CXX		  := g++
+CXX_FLAGS := -Wall -Wextra -std=c++17 -ggdb 
+
+BIN		:= bin
+SRC		:= src
+INCLUDE	:= /opt/vc/include -I/opt/vc/include/interface/vmcs_host/linux -I/opt/vc/include/interface/vcos/pthreads -I/home/pi/openvg
+LIB		:= /opt/vc/lib -lbrcmEGL -lbrcmGLESv2 -lbcm_host -lpthread -ljpeg
+
+LIBRARIES	:= /home/pi/openvg/libshapes.o /home/pi/openvg/oglinit.o
+EXECUTABLE	:= main
+
+
+all: $(BIN)/$(EXECUTABLE) 
+
+run: clean all
+	clear
+	./$(BIN)/$(EXECUTABLE) 
+
+$(BIN)/$(EXECUTABLE): $(SRC)/*.cpp
+	$(CXX) $(CXX_FLAGS) -I$(INCLUDE) -L$(LIB) $^ -o $@ $(LIBRARIES) 
+
+clean:
+	-rm $(BIN)/*
