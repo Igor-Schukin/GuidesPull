@@ -1,0 +1,55 @@
+===============================================================================================================================================================================
+	INSTALLATION OF VSCODE
+=================================================================================================================================================================================
+Here is two variants how to install vsCode and one of the solutions if you have problems
+
+Varik 0
+---------------------------------------------------------------------------
+IN CONSOLE:
+=============
+1)curl -s https://packagecloud.io/install/repositories/headmelted/codebuilds/script.deb.sh | sudo bash
+
+2)sudo apt-get install code-oss
+
+3)???????
+
+4)PROFIT!!!!
+
+================================================================================================================================================================================
+INSTALL GUIDE FOR VERSION 0 ->https://medium.com/@melzoghbi/install-visual-studio-code-on-raspbian-eedc566c616d
+==========================================================================================================================================================================================
+
+Varik1 (This variant I used and it worked for me.....)
+------------------------------------------------------------------------------------------------------------
+IN CONSOLE:
+==============
+1)wget https://packagecloud.io/headmelted/codebuilds/gpgkey -O - | sudo apt-key add -
+
+2)curl -L https://code.headmelted.com/installers/apt.sh | sudo bash
+
+3)??????
+
+4)PROFIT!
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+IF YOU HAVE BLACK SCREEN WHEN YOU ARE OPENING VSCODE A.K.A DOOMSCREEN
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Problem source is in the version of your VScode or in linux.Here is two ways how to fix it
+downgrade your vscode to stable version or turn off gpu(personally it did not helped me)
+============
+IN CONSOLE:
+============
+apt-get install code-oss=1.29.0-1539702286 
+
+
+
+
+===================================================================================================
+PAGE TO GITHUB "ISSUESES" HEADMELTED -https://github.com/headmelted/codebuilds/issues/43>
+==========================================================================================================
+
+
+
+
+
+
