@@ -1,0 +1,74 @@
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+-                                                                       -
++       _____ _    _ _________     _______          _____ _______ 		+
+-      / ____| |  | |__   __\ \   / / ____|   /\   |  __ \__   __|      -
++     | |    | |  | |  | |   \ \_/ / |       /  \  | |__) | | |         +
+-     | |    | |  | |  | |    \   /| |      / /\ \ |  ___/  | |         -
++     | |____| |__| |  | |     | | | |____ / ____ \| |      | |         +
+-      \_____|\____/   |_|     |_|  \_____/_/    \_\_|      |_|         -
++                                                                       +
+-                                                                       -
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+GUIDE V->0.0.0.2
+OS ->Raspberry Pi newest(on ) 13/06/2018 version ( Raspbian v->July 2019)
+
+Raspberry PI-> Raspberry Pi Model B V1.1
+
+
+Installation guide :
+1)
+	$ sudo apt-get update
+	$ sudo apt-get upgrade
+	
+2)
+	$ sudo apt-get install cutycapt
+	
+3)
+	????
+
+4) 
+	PROFIT!
+========================================================================	
+				HOW TO USE IT                                         
+========================================================================
+  CutyCapt support formats ->SVG, PDF, PS, PNG, JPEG, TIFF, GIF
+btw have support of javascript and you can convert HTML files(it can be file in your Pi) to image. 
+
+More info(works only in your raspberryPi console)-> $cutycapt --help
+
+type this in console for test:(http into image)
+		$ cutycapt --url=http://www.google.com --out=google.png
+
+(local html page into image --url=file:$(FULL_PATH)/$(FILE_FULL_NAME) --out=$(FILES_NAME).$(EXTENSION)) 
+	$ cutycapt --url=file:/hone/pi/Desktop/WebPage.html --out=tempPage.png	
+
+Source of info ->http://xmodulo.com/convert-html-web-page-png-image-linux.html
+Potential fix(not tested) of libraries ->http://edwinhernandez.com/2013/05/26/installing-cutycapt-on-ubuntu-12-0-4/
+
+-----------------------------------------------------
+					AWARE!
+-----------------------------------------------------
+ *Output image will be placed in working directory and THE MOST important 
+CutyCapt by some mean "squeezes" output image
+better use like that (output image will be 1920x1080)
+
+  $ cutycapt --url=http://www.google.com --out=google.png --min-width=1920 --min-height=1080
+
+-------------------------------------------------------------------------------------------------------------------------
+				How to use CutyCapt on a headless server
+-------------------------------------------------------------------------------------------------------------------------
+*no minotor connected to Raspberry Pi
+Install Xvfb
+->$sudo apt-get install xvfb
+
+After installing Xvfb change the command of cutycapt as:-
+ $xvfb-run --server-args="-screen 0, 1280x1200x24" cutycapt --url=http://www.demo.com --out=demo.png
+
+--server-args and dimension are optional here.
+
+
+It will first launch the Xvfb server then use CutyCapt to screen capture of the webpage. 
+So it may take longer. If you want to take multiple screenshots 
+then you start can Xvfb server as a background daemon beforehand.
+
+Source ->https://www.oodlestechnologies.com/blogs/How-to-use-CutyCapt-on-a-headless-server/
