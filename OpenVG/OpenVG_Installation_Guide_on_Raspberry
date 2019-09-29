@@ -1,0 +1,51 @@
+======================================================================================================================================================================================================================
+							INSTALLATION OF OPENVG.
+======================================================================================================================================================================================================================
+
+
+List of commands what must be done in console and changes what must to be done in openvg files;
+==================
+:IN CONSOLE
+==================
+1)sudo apt-get install libjpeg8-dev indent libfreetype6-dev ttf-dejavu-core
+2)git clone git://github.com/ajstarks/openvg
+3)cd openvg
+4)sudo make
+==================
+:IN FOLDERS OF YOUR RASPBERRY PI
+==================
+5)Open MakeFile in  /home/pi/openvg/client  
+6)Change lines in MakeFile from :
+
+-lEGL -lGLESv2  (whatever laters was there)
+
+to:
+
+-lbrcmEGL -lbrcmGLESv2
+
+==================
+:IN CONSOLE
+==================
+7)cd client 
+8)sudo make test
+
+After this command must be some kind of slideshow what shows what OpenVG can do if not well check this-> *
+==================
+:IN CONSOLE
+==================
+9)To install the shapes library as a system-wide shared library type this in console(not in /client but in /openvg folder):
+  9.1)make library
+  9.2)sudo make install
+
+10)????????
+
+11)PROFIT!
+
+======================================================================================================================================================================================================================
+
+GITHUB WITH FULL OLD!!! INSTALLATION GUIDE-> https://github.com/ajstarks/openvg
+
+======================================================================================================================================================================================================================
+
+*if after doing these steps or you have other problems with installation of OpenVG then welcome to the club buddy...
+Start dancing with tambourine.......
