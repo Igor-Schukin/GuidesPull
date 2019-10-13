@@ -69,13 +69,50 @@ $ make install
 -lcurl
 ```  
 * For Windows  
-//failed to find
+//сдесь должен быть варик бес vcpkg   
+
+Alternatively you can use vcpkg to install curl:    
+1.Get [vcpkg](https://github.com/microsoft/vcpkg/archive/2019.08.zip) and extract it to a folder of your choice (e.g. C:\vcpkg\)  
+2.Open ***Developer Command Prompt for VS 2017***  for me it is ***vcvarsall.bat*** and path to it is  below
+```shell  
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build
+```  
+and ***cd*** to ***C:\vcpkg\***  
+3.Run  
+```
+bootstrap-vcpkg.bat
+```
+4.RUN  
+```  
+vcpkg.exe integrate install
+```
+5.RUN  
+```  
+vcpkg.exe install curl
+```
+6.Create a new C++ project in Visual Studio and you're ready to go - try it with the example above. There's no need to modify project settings.  
+```cpp  
+#define CURL_STATICLIB
+#include <curl\curl.h>
+
+int main()
+{
+    CURL *curl;
+
+    curl = curl_easy_init();
+    curl_easy_cleanup(curl);
+
+    return 0;
+}
+```
+
 [MainPage of cURL | ](https://curl.haxx.se/)
 [Downloand | ](https://curl.haxx.se/download.html)
 [Installation | ](https://curl.haxx.se/docs/install.html)
 [Tutorial | ](https://curl.haxx.se/libcurl/c/libcurl-tutorial.html)
 [Examples | ](https://curl.haxx.se/libcurl/c/example.html)
 [Работаем в сети с помощью libcurl | ](https://www.programmersforum.ru/showthread.php?t=60338)
+[Установка для шминдоуса | ](https://stackoverflow.com/questions/53861300/how-do-you-properly-install-libcurl-for-use-in-visual-studio-2017)  
 ## List of useful functions  
 Functions/Methods for project and most common tasks.  
 ### Get Image Size
