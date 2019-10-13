@@ -47,10 +47,37 @@ This lib allows you to use in your project ***RESTapi*** stuff. Lib is without m
 cURL supports this protocols ->***HTTP,FTP,SSH***   
 Probably need to move to [C++ wrapper around libcURL ](https://github.com/jpbarrette/curlpp)  
 //need to add methods,examples and options what can  cURL  
-[MainPage of cURL](https://curl.haxx.se/)  
-[Tutorial](https://curl.haxx.se/libcurl/c/libcurl-tutorial.html)
-[Работаем в сети с помощью libcurl](https://www.programmersforum.ru/showthread.php?t=60338)
+#### ***Installation & configuration*** 
+* For LINUX  
+Download [archive](https://curl.haxx.se/download.html) and unzip it or use GIT to get source repo  
+```shell  
+$ git clone https://github.com/curl/curl.git
+```
+A normal Unix installation is made in three or four steps (after you've unpacked the source archive if you downloaded zip if had been used git skip that) commands must be exe ***inside  unziped curl folder*** and need to be ***root*** :  
+```shell
+$ ./configure
+$ make
+$ make test 
+$ make install
+```
+***#Include*** for project  
+```
+#include <curl/curl.h>  
+```
+***lib*** what must be added to Makefile  
+```Makefile  
+-lcurl
+```  
+* For Windows  
+//failed to find
+[MainPage of cURL | ](https://curl.haxx.se/)
+[Downloand | ](https://curl.haxx.se/download.html)
+[Installation | ](https://curl.haxx.se/docs/install.html)
+[Tutorial | ](https://curl.haxx.se/libcurl/c/libcurl-tutorial.html)
+[Examples | ](https://curl.haxx.se/libcurl/c/example.html)
+[Работаем в сети с помощью libcurl | ](https://www.programmersforum.ru/showthread.php?t=60338)
 ## List of useful functions  
+Functions/Methods for project and most common tasks.  
 ### Get Image Size
 Code what auto finds out image size works with ***JPEG,PNG***  
 You can find it [here.](https://github.com/RazdolbayOne/GuidesPull/blob/master/C%2B%2B/Usefull_functions/Get_Image_Size_func.txt)
