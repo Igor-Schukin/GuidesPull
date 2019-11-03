@@ -43,7 +43,7 @@ using json = nlohmann::json;
 ```
 [Here are list of methods what json++ can do](https://github.com/nlohmann/json)
 ### cURL  
-This lib allows you to use in your project ***RESTapi*** stuff. Lib is without methods and is also function programming C lib.
+This lib allows you to use in your project ***RESTapi*** [stuff](https://flaviocopes.com/http-curl/). Lib is without methods and is also function programming C lib.
 cURL supports this protocols ->***HTTP,FTP,SSH***   
 Probably need to move to [C++ wrapper around libcURL ](https://github.com/jpbarrette/curlpp)  
 //need to add methods,examples and options what can  cURL  
