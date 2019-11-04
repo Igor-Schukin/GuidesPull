@@ -72,11 +72,17 @@ $ make install
 //сдесь должен быть варик бес vcpkg   
 
 Alternatively you can use vcpkg to install curl:    
+Works on Visual Studio 2017 -> windows7  
+Works on VS 2019 ->Win10  
 1.Get [vcpkg](https://github.com/microsoft/vcpkg/archive/2019.08.zip) and extract it to a folder of your choice (e.g. C:\vcpkg\)  
-2.Open ***Developer Command Prompt for VS 2017***  for me it is ***vcvarsall.bat*** and path to it is  below
+2.Open ***Developer Command Prompt for VS***  for me(I have VS 2017) it is in path 
 ```shell  
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build
 ```  
+and RUN(from console obviusly)
+```shell  
+vcvarsall.bat amd64
+```
 and ***cd*** to ***C:\vcpkg\***  
 3.Run  
 ```
