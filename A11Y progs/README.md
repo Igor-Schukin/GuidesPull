@@ -73,12 +73,12 @@ Open VSCode and in extension tab in search box find C/c++ extension download it!
 Create folder of your project and open that folder using VSCODE  
 ### How to debug Makefile project  
 This works on version 0.2.0 of vs jsons   
-In Makefile  you need add option ***-g*** flag to  compiler to use,  
-For example
+In Makefile  you need add option ***-g*** flag to  compiler to use, “ ***-g*** ”: Generates debugginginformation that is used by gdb-baseddebuggers  
+Adding a flag example
 ```
 CC=g++ -g -Wall 
-```
-where ***-g*** is option flag  
+``` 
+
  Just in case rebuild your project with the added flag  before continue;      
  <br>
  First you need to change task.json in your project     
@@ -155,7 +155,7 @@ Change ***task.json*** like so(probably do not need so complicated one but  ¯\\
 ```
 Rebuild project if you are not using ***Ctrl+Shift+B***(its like make in console now, because we changed task.json)  
 DATS ALL!! YOU CAN NOW USE DEBUGER!!!  
-[see "debug in vs code" article | ](https://github.com/LambdaSchool/CS-Wiki/wiki/C-and-Cpp-Debugging-in-VS-Code)[MSD debuging in VSCODE | ](https://code.visualstudio.com/docs/editor/debugging) 
+[see "debug in vs code" article | ](https://github.com/LambdaSchool/CS-Wiki/wiki/C-and-Cpp-Debugging-in-VS-Code)[g++ in PDF | ](https://web.stanford.edu/class/cs193d/handouts/make.pdf)[MSD debuging in VSCODE | ](https://code.visualstudio.com/docs/editor/debugging) 
 
 
 ### Sources  
