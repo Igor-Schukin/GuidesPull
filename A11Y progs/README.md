@@ -1,6 +1,15 @@
-# Here are stored additionall programs/Guides for SmartRTU
+# Here are stored additionall programs/Guides for SmartRTU  
+Programs what are used in smartRTU project how to install them,how to configure them and how to use them......
 - [CutyCapt](#cutycapt)
+  - [Installation](#installation)
+  - [How to use it](#how-to-use-it)
+  - [How to use CutyCapt on a Headless server](#how-to-use-cutycapt-on-a-headless-server)
 - [VSCode](#vscode)
+  - [Installation](#installation)
+  - [Configuration](#configuration)
+  - [How to start](#how-to-start)
+  - [Debuging Makefile Project](#how-to-debug-makefile-project)
+  - [BLACK SCREEN FIX](#if-you-have-black-screen-when-you-are-opening-vscode-a-k-a-doomscreen)
 - [Sources](#sources)
 ## CutyCapt  
 CutyCapt is comand line converter from ***HTML to image.***  
@@ -52,7 +61,7 @@ MS notepad but with extensions IDE. On Raspbian without Intelsens and debugger..
 3)??????
 4)PROFIT!
 ```  
-### IF YOU HAVE BLACK SCREEN WHEN YOU ARE OPENING VSCODE A.K.A DOOMSCREEN  
+### IF YOU HAVE BLACK SCREEN WHEN YOU ARE OPENING VSCODE A-K-A DOOMSCREEN  
 Problem source is in the version of your VScode or in linux.Here is two ways how to fix it
 downgrade your vscode to stable version or turn off gpu(personally it did not helped me)  
 ```shell
@@ -62,5 +71,93 @@ $ apt-get install code-oss=1.29.0-1539702286
 Open VSCode and in extension tab in search box find C/c++ extension download it! Dats all you have working C/C++ IDE  
 ### How to start  
 Create folder of your project and open that folder using VSCODE  
+### How to debug Makefile project  
+This works on version 0.2.0 of vs jsons   
+In Makefile  you need add option ***-g*** flag to  compiler to use,  
+For example
+```
+CC=g++ -g -Wall 
+```
+where ***-g*** is option flag  
+ Just in case rebuild your project with the added flag  before continue;      
+ <br>
+ First you need to change task.json in your project     
+  To create a ***launch.json*** file, open your project folder in VS Code (***File > Open Folder***) and then select the Configure gear icon on the Debug view top bar. Chose gdb(for LInux) then launch.json will be generated but you need to change it like so:  
+```launchJSON  
+ {
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+    
+        {
+            "name": "Pusk", //I named it Pusk because i can 
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/Pusk", //path to your programs exe and exe name
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}
+ ```  
+Second we must configure ***task.json***(basicly its kinda script to launch our programm using Makefile instead the default compiler).  
+To create task.json
+```  
+    1)Open a folder with vscode
+    2)Hit F1
+    3)Select "Tasks: Configure Task Runner"
+    4)Hit Enter and vscode will create a sample task.json for you
+``` 
+Change ***task.json*** like so(probably do not need so complicated one but  ¯\\_(ツ)_/¯ )  
+```taskjson  
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Build",
+        "type": "shell",
+        "command": "make", //its like writing in console make
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": {
+          "owner": "cpp",
+          "fileLocation": ["relative", "${workspaceFolder}"],
+          "pattern": {
+            "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+            "file": 1,
+            "line": 2,
+            "column": 3,
+            "severity": 4,
+            "message": 5
+          }
+        }
+      }
+    ]
+  }
+```
+Rebuild project if you are not using ***Ctrl+Shift+B***(its like make in console now, because we changed task.json)  
+DATS ALL!! YOU CAN NOW USE DEBUGER!!!  
+[see "debug in vs code" article | ](https://github.com/LambdaSchool/CS-Wiki/wiki/C-and-Cpp-Debugging-in-VS-Code)[MSD debuging in VSCODE | ](https://code.visualstudio.com/docs/editor/debugging) 
+
+
 ### Sources  
+Here is sored all resources where data was found   
 [ISSUES | ](https://github.com/headmelted/codebuilds/issues/43>)[Another installation Guide | ](https://medium.com/@melzoghbi/install-visual-studio-code-on-raspbian-eedc566c616d)
