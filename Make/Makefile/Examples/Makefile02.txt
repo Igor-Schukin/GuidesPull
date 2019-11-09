@@ -1,0 +1,33 @@
+
+#Makefile with auto dependencies generating .d files
+#Makefile with "auto" search of cpp files from src folder
+#Makefile what can delete .d files or all .o files 
+CC=g++ -g -Wall 
+#Get all .cpp files list
+source = $(wildcard src/*.cpp)
+obj = $(source:.cpp=.o)
+deps = $(source:.cpp=.d)
+
+#deps = $(subst src/,deps/,$(depp))
+LDFLAGS = -lcurl
+DEPDIR = 
+EXE_FILE = CuWrap
+
+all:$(EXE_FILE)
+#Final compund of all .o files into exe file
+$(EXE_FILE):$(obj) 
+	$(CC) -o $@ $^ $(LDFLAGS)
+
+#Tamplate rule how to create foo.o from foo.c with dependencies(headers) from file foo.d 
+#-MMD -MP  all .d files are created/updated 
+%.o: %.cpp
+	$(CC) -MMD  -MP -c $< -o $@
+	
+# $(RM) is rm -f by default
+.PHONY:clean,cleandeps
+clean:
+	$(RM) $(obj) $(deps) $(EXE_FILE)
+cleandeps:
+	$(RM) $(deps)
+#Include the dependency files that exist. Use wildcard to avoid failing on non-existent files.
+-include $(deps)
