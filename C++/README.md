@@ -68,6 +68,14 @@ $ make install
 ```Makefile  
 -lcurl
 ```  
+If this error appiers then launching you exe what uses cURL  
+```text  
+./(Your exe name): error while loading shared libraries: libcurl.so.4: cannot open shared object file: No such file or directory 
+```
+then type this in console:  
+```shell  
+$ sudo apt-get install libcurl3 -y
+```
 * For Windows  
 //сдесь должен быть варик бес vcpkg   
 
