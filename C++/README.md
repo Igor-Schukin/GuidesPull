@@ -49,7 +49,7 @@ Probably need to move to [C++ wrapper around libcURL ](https://github.com/jpbarr
 //need to add methods,examples and options what can  cURL  
 #### ***Installation & configuration*** 
 * For LINUX  
-Need to be installed [gcc](https://github.com/RazdolbayOne/GuidesPull/tree/master/Make#how-to-install-make)
+Need to be installed [gcc !!!](https://github.com/RazdolbayOne/GuidesPull/tree/master/Make#how-to-install-make)  
 Download [archive](https://curl.haxx.se/download.html) and unzip it or use GIT to get source repo  
 ```shell  
 $ git clone https://github.com/curl/curl.git
