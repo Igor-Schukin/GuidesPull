@@ -10,6 +10,7 @@ Programs what are used in smartRTU project how to install them,how to configure 
   - [How to start](#how-to-start)
   - [Debuging Makefile Project](#how-to-debug-makefile-project)
   - [BLACK SCREEN FIX](#if-you-have-black-screen-when-you-are-opening-vscode-a-k-a-doomscreen)
+- [Midnight Commander](#midnight-commander)
 - [Sources](#sources)
 ## CutyCapt  
 CutyCapt is comand line converter from ***HTML to image.***  
@@ -157,6 +158,12 @@ Rebuild project if you are not using ***Ctrl+Shift+B***(its like make in console
 DATS ALL!! YOU CAN NOW USE DEBUGER!!!  
 [see "debug in vs code" article | ](https://github.com/LambdaSchool/CS-Wiki/wiki/C-and-Cpp-Debugging-in-VS-Code)[g++ in PDF | ](https://web.stanford.edu/class/cs193d/handouts/make.pdf)[MSD debuging in VSCODE | ](https://code.visualstudio.com/docs/editor/debugging) 
 
+## Midnight Commander    
+One tool that can help both Linux newbies and veterans is Midnight Commander, a Text User Interface (TUI) file manager.  
+### Installation  
+```shell  
+$ sudo apt-get install mc
+```
 
 ### Sources  
 Here is sored all resources where data was found   
