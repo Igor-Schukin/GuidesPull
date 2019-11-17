@@ -1,6 +1,7 @@
 # MAKE Me Baby  
 ***or You Never Forget The First Time You Got Made***  
-An introductory guide of make, and how to write a simple makefile,  
+An introductory guide of make, and how to write a simple makefile,    
+<img src="https://imgur.com/yfmXglP.png"></img> 
 - [What is Make? And Why Should I Care?](#what-is-make-and-why-should-i-care)
 - [How to install Make](#how-to-install-make)
 
