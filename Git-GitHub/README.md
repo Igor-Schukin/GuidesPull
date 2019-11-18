@@ -1,7 +1,7 @@
 # Here are stored all info about Git and GitHUB
 
-By far, the most widely used modern version control system in the world today .[Если кратко от Торвальдса](https://imgur.com/keliKMZ)  
-<img src="https://emty.com" width="90%"></img>  
+By far, the most widely used modern version control system in the world today .[Если кратко от Торвальдса](https://imgur.com/keliKMZ)    
+<img src="https://imgur.com/PBt24mt.png" width="90%"></img>  
 
 - [Installation](#installation)
 - [Basic commands and concepts](#basic-commands-and-concepts)
