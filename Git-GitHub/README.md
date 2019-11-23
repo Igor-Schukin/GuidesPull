@@ -15,7 +15,8 @@ If you’re on a Debian-based distribution, such as Ubuntu, try apt if not use [
 $ sudo apt install git-all
 ```  
 ## Basic commands and concepts  
-Kinda underconstruction section.Better see ***Interactive sources***  
+Naught but the ***better see Interactive sources*** remaining to disclose  
+The site of this forgotten Babylon.   
   
 ## Info  
 ### Interactive sources  
