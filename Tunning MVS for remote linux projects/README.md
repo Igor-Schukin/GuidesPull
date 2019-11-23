@@ -1,13 +1,20 @@
 
-# Guides of tuning up MVS on Windows/Linux
-- [Create NEW remote Linux project using VS](#create-new-remote-linux-project-using-vs)
+# Guides for remote Linux Project
+- [WHY?!](#why)
+- [Remote Linux project from Linux](#remote-linux-project-from-linux)
+- [Remote Linux project from Windows(Visual Studio)](#remote-linux-project-from-windows)
   - [What do you need to start:](#what-do-you-need-to-start)
   - [VS configuration part](#vs-configuration-part)
   - [Test project  ](#test-project)
 - [Source list](#source-list)
-## Create NEW remote Linux project using VS
+
+## Why  
+ Problem appiered when you start using Raspberry Pi as IDE .Its TOO SLOW!. In Raspbians VScode you do not have Intelsens(auto complite line.shows methodds of the class e.t.c), Debugger. This topic was created to solve this problems using remote build options in Visual studio or in VSCODE in the remote machines. where Raspberry PI will be used as compiler of programm.  
+## Remote Linux project from Linux
+//here The lone and level sands stretch far away...
+## Remote Linux project from Windows
 ### What do you need to start
-* Straigth arms
+* N Straigth arms
 * Pluged on Raspbbery and Enabled SSH   
     Start->Preferences->Raspberry Pi Configuration->Interfaces->["Enable SSH."](https://imgur.com/Qtg2m7v)
 * Raspberry Pi hostname  
