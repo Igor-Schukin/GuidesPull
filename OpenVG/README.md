@@ -36,6 +36,10 @@ After this command must be some kind of slideshow what shows what OpenVG can do 
 9.1)$ make library
 9.2)$ sudo make install
 ```  
+10)Install libpng lib to use png images  
+```shell  
+$ sudo apt-get install libpng-dev 
+```
 ## First program  
 ```cpp  
 //==============================================================================================================================================================================================================================================
