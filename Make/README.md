@@ -1,4 +1,4 @@
-# CMake and Makefile zone 
+# CMake and Makefile pills 
 here are stored links to SMAR.RTU "builders" guides.  
 <img src="https://imgur.com/QeW7hdK.png"></img> 
 ## Makefile  
