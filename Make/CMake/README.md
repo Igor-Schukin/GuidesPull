@@ -2,8 +2,12 @@
 <img src="https://imgur.com/9tM2lUn.png"></img> 
 
 ## About  
-CMake is an open-source, cross-platform family of tools designed to build, test and package software. CMake is used to control the software compilation process using simple platform and compiler independent configuration files, and generate native makefiles and workspaces that can be used in the compiler environment of your choice. The suite of CMake tools were created by Kitware in response to the need for a powerful, cross-platform build environment for open-source projects such as ITK and VTK.  
+
+Система сборки CMake представляет из себя оболочку над другими платформенно зависимыми утилитами (например, Ninja или Make). Таким образом, в самом процессе сборки, как бы парадоксально это ни звучало, она непосредственного участия не принимает.  
   
+Система сборки CMake принимает на вход файл CMakeLists.txt с описанием правил сборки на формальном языке CMake, а затем генерирует промежуточные и нативные файлы сборки в том же каталоге, принятых на Вашей платформе.  
+
+Сгенерированные файлы будут содержать конкретные названия системных утилит, директорий и компиляторов, в то время как команды CMake орудуют лишь абстрактным понятием компилятора и не привязаны к платформенно зависимым инструментам, сильно различающихся на разных операционных системах.  
 
 ## Installation Under Linux and  VSCode  
 A way to install gcc compiler is to install it as part of build-essential package. ***Build-essential package*** will also install additional libraries as well as ***g++*** compiler for Makefile. In most cases or if unsure this is exactly what you need: 
@@ -67,4 +71,4 @@ $ sudo apt-get purge --auto-remove cmake
 ```
 [Check this article for update and delete CMake](https://askubuntu.com/questions/355565/how-do-i-install-the-latest-version-of-cmake-from-the-command-line)  
 ## Sources
-[Instalaltion/updating/purging CMake | ](https://askubuntu.com/questions/355565/how-do-i-install-the-latest-version-of-cmake-from-the-command-line)  
+[Instalaltion/updating/purging CMake | ](https://askubuntu.com/questions/355565/how-do-i-install-the-latest-version-of-cmake-from-the-command-line)[Сыль на Хабр о CMake | ](https://habr.com/ru/post/432096/)  
