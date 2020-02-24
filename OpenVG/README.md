@@ -7,8 +7,10 @@
 - [Sources](#sources)
 ## Installation and Confuguration  
 Here is List of commands/steps what must be done in console and changes what must to be done in openvg files to work in Raspberry PI(Raspbian OS)  
+Before what [gcc/make](https://github.com/RazdolbayOne/GuidesPull/tree/master/Make/Makefile) must be installed!
 * ***In console:***  
 ```shell  
+0)$ cd ~
 1)$ sudo apt-get install libjpeg8-dev indent libfreetype6-dev ttf-dejavu-core
 2)$ git clone git://github.com/ajstarks/openvg
 3)$ cd openvg
