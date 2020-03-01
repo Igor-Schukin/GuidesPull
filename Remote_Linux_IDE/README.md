@@ -1,8 +1,12 @@
 
-# Guides for remote Linux Project
-- [WHY?!](#why)
-- [Remote Linux project from Linux](#remote-linux-project-from-linux)
-- [Remote Linux project from Windows(Visual Studio)](#remote-linux-project-from-windows)
+# Guides how to convert your IDE to remote one...
+- [WHY I exist?!](#why)  
+- [Turn your VSCODE into remote IDE |INTRO|](#visual-code)
+  - [Step 0 ](#prepare-raspberry-pi)
+  - [Step 1 ](#prepare-vscode)
+  - [Step 2 ](#magick-can-start)
+  - [FAQ ](#faq)
+- [Turn your Microsoft Visual Studio into remote IDE |INTRO|](#mvs)
   - [What do you need to start:](#what-do-you-need-to-start)
   - [VS configuration part](#vs-configuration-part)
   - [Test project  ](#test-project)
@@ -10,9 +14,47 @@
 
 ## Why  
  Problem appiered when you start using Raspberry Pi as IDE .Its TOO SLOW!. In Raspbians VScode you do not have Intelsens(auto complite line.shows methodds of the class e.t.c), Debugger. This topic was created to solve this problems using remote build options in Visual studio or in VSCODE in the remote machines. where Raspberry PI will be used as compiler of programm.  
-## Remote Linux project from Linux
-//here The lone and level sands stretch far away...
-## Remote Linux project from Windows
+
+## Visual Code
+Its assumed what you already installed [gcc](https://github.com/RazdolbayOne/GuidesPull/tree/master/Make/Makefile), [CMake](https://github.com/RazdolbayOne/GuidesPull/tree/master/Make/CMake), [Cutycapt](https://github.com/RazdolbayOne/GuidesPull/tree/master/A11Y%20progs#installation), [OpenVG](https://github.com/RazdolbayOne/GuidesPull/tree/master/OpenVG#installation-and-confuguration) etc on Raspberry.In version 1.42 (2020) of VsCode Microsoft still did not added ARM procesors support(no intellsans and debuging) but they said they will add in future [proof](https://github.com/microsoft/vscode/issues/6442),but they added remote IDE functionality. It means what you code projectfor example in ubuntu and use Raspberry Pi as compiler/linker.    
+### Prepare Raspberry Pi  
+* Pluged on Raspbbery and Enabled SSH   
+    Start->Preferences->Raspberry Pi Configuration->Interfaces->["Enable SSH."](https://imgur.com/Qtg2m7v)
+* Raspberry Pi hostname  
+     Use this command in console to [get hostname: ](https://imgur.com/6urxqFa) 
+     ```shell
+     $ hostname -I
+     ```
+* Must be installed on Linux machine.command for installation(probably you can survive without gdb stuff):  
+    ```shell
+    $ sudo apt-get install openssh-server g++ gdb gdbserver
+    ```
+### Prepare VsCode  
+Installed [VsCode](https://code.visualstudio.com/) on your working machine not on Pi.  
+Installed Extensions in VsCode:  
+* "C/C++"
+* "c/c++ definition"  
+* "CMake language support"  
+* "CMake tools"  
+And most importanly what allows you to turn your IDE as remote one: 
+* "Remote Development"-Microsoft  
+
+
+### Magick can start  
+### FAQ    
+VSCode can be installed on windows.Can I use it in same way as in Linux?  
+```shell  
+ДА.
+```
+How you debug project?  
+```c++  
+printf("DEBUG style \n");  
+```
+How you use intelsanse if VSCode do not have ARM support? ->  
+
+## MVS  
+<img src="https://imgur.com/GoI1yZm.png" width="85%"></img>   
+***THIS WORKS UNDER WINDOWS OS ONLY .***  (kinda tested on windows 7 and 10)
 ### What do you need to start
 * N Straigth arms
 * Pluged on Raspbbery and Enabled SSH   
