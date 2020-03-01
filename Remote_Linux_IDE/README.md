@@ -16,6 +16,7 @@
  Problem appiered when you start using Raspberry Pi as IDE .Its TOO SLOW!. In Raspbians VScode you do not have Intelsens(auto complite line.shows methodds of the class e.t.c), Debugger. This topic was created to solve this problems using remote build options in Visual studio or in VSCODE in the remote machines. where Raspberry PI will be used as compiler of programm.  
 
 ## Visual Code
+<img src="https://imgur.com/bx7eKjP.png" height="65%"></img>   
 Its assumed what you already installed [gcc](https://github.com/RazdolbayOne/GuidesPull/tree/master/Make/Makefile), [CMake](https://github.com/RazdolbayOne/GuidesPull/tree/master/Make/CMake), [Cutycapt](https://github.com/RazdolbayOne/GuidesPull/tree/master/A11Y%20progs#installation), [OpenVG](https://github.com/RazdolbayOne/GuidesPull/tree/master/OpenVG#installation-and-confuguration) etc on Raspberry.In version 1.42 (2020) of VsCode Microsoft still did not added ARM procesors support(no intellsans and debuging) but they said they will add in future [proof](https://github.com/microsoft/vscode/issues/6442),but they added remote IDE functionality. It means what you code projectfor example in ubuntu and use Raspberry Pi as compiler/linker.    
 ### Prepare Raspberry Pi  
 * Pluged on Raspbbery and Enabled SSH   
@@ -158,4 +159,6 @@ Create ***simple Makefile*** in project folder:
  [Habr | ](https://habr.com/ru/company/microsoft/blog/319962/)
  [ТЫК |](https://habr.com/ru/post/321228/)
 
+### Archive  
+[VSCODE template](https://imgur.com/DkHu53j)  
  
