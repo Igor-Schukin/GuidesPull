@@ -5,7 +5,7 @@ Guides and guides for SmartRTU project
 1. [Install Raspbian OS on Raspberry Pi](https://github.com/RazdolbayOne/GuidesPull/tree/master/RaspberryPi)    
  1.1 [Learn about Linux shell if you know me then skip me...](https://github.com/RazdolbayOne/GuidesPull/tree/master/Linux)  
   
-2. [Install gcc/Make](https://github.com/RazdolbayOne/GuidesPull/tree/master/Make#how-to-install-make)  
+2. [Install gcc/Make or CMake](https://github.com/RazdolbayOne/GuidesPull/tree/master/Make#how-to-install-make)  
   
 3. [install OpenVG](https://github.com/RazdolbayOne/GuidesPull/tree/master/OpenVG#installation-and-confuguration)  
   
