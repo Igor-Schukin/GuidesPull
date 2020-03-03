@@ -12,13 +12,17 @@ Guides and guides for SmartRTU project
 4. [install VSCode if you will be using Raspberry as IDE](https://github.com/RazdolbayOne/GuidesPull/tree/master/A11Y%20progs#installation) 
   
 5. [install CutyCapt](https://github.com/RazdolbayOne/GuidesPull/tree/master/A11Y%20progs#installation)  
- 5.1[For Headless server](https://github.com/RazdolbayOne/GuidesPull/tree/master/A11Y%20progs#how-to-use-cutycapt-on-a-headless-server)
+ 5.1 [For Headless server](https://github.com/RazdolbayOne/GuidesPull/tree/master/A11Y%20progs#how-to-use-cutycapt-on-a-headless-server)
   
 6. [install Midnight commander](https://github.com/RazdolbayOne/GuidesPull/tree/master/A11Y%20progs#midnight-commander)  
   
 7. [Install GIT and create GitHub account](https://github.com/RazdolbayOne/GuidesPull/tree/master/Git-GitHub#installation)  
   
-8. [Install Curl on raspbian](https://github.com/RazdolbayOne/GuidesPull/tree/master/C%2B%2B#curl)  
-  
+8. [Install A11y libs on raspbian](https://github.com/RazdolbayOne/GuidesPull/tree/master/C%2B%2B#curl)  
+ 8.1 [cURL (Required)](https://github.com/RazdolbayOne/GuidesPull/tree/master/C%2B%2B#curl)    
+ 8.2 [JSON++](https://github.com/RazdolbayOne/GuidesPull/tree/master/C%2B%2B#json)  
+ 8.3 [CPR a.k.a wrapper around Curl](https://github.com/RazdolbayOne/GuidesPull/tree/master/C%2B%2B#cpr)  
+
 ADDITIONAL  
 [->Remote_Linux_IDE.](https://github.com/RazdolbayOne/GuidesPull/blob/master/Remote_Linux_IDE/README.md#why)  
+[Vault of usefull functions](https://github.com/RazdolbayOne/GuidesPull/tree/master/C%2B%2B#list-of-useful-functions)  
