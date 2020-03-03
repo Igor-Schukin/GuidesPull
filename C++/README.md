@@ -5,6 +5,7 @@
 - [Libs](#libs)  
   - [JSON++](#json)
   - [cURL](#curl)
+  - [CPR](#cpr)
 - [List of useful functions  ](#list-of-useful-functions)  
   - [Get Image Size](#get-image-size)
   - [Button press detection](#button-press-detection)
@@ -128,6 +129,12 @@ int main()
 [Examples | ](https://curl.haxx.se/libcurl/c/example.html)
 [Работаем в сети с помощью libcurl | ](https://www.programmersforum.ru/showthread.php?t=60338)
 [Установка для шминдоуса | ](https://stackoverflow.com/questions/53861300/how-do-you-properly-install-libcurl-for-use-in-visual-studio-2017)  
+### CPR  
+CPR is OOP wrapper around cURL lib. Can do REST HTTP requests asynchronos too. and other stuff like authentication.. ***WORKS ONLY ON CMAKE PROJECTS!!!***   
+## How to install into existing project  
+
+## Documentation  
+[its here | ](https://whoshuu.github.io/cpr/)[or in its github ](https://github.com/whoshuu/cpr)  
 ## List of useful functions  
 Functions/Methods for project and most common tasks.  
 ### Get Image Size
