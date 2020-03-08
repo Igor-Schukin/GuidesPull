@@ -55,7 +55,8 @@ How you use intelsanse if VSCode do not have ARM support? ->
 
 ## MVS  
 <img src="https://imgur.com/GoI1yZm.png" width="85%"></img>   
-***THIS WORKS UNDER WINDOWS OS ONLY .***  (kinda tested on windows 7 and 10)
+***THIS WORKS UNDER WINDOWS OS ONLY .***  (kinda tested on windows 7 and 10)  
+[Maybe solution could be faund here](https://devblogs.microsoft.com/cppblog/linux-development-with-c-in-visual-studio/)
 ### What do you need to start
 * N Straigth arms
 * Pluged on Raspbbery and Enabled SSH   
