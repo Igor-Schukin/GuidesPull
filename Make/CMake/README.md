@@ -50,7 +50,21 @@ in VS installer
 ## How to use in VSCode  
 ***For new project***              
 Create new folder(where project will be stored) and open that folder with VSCode/  
-Press ***Ctrl+Shift+p*** and chose Quick Cmake
+Press ***Ctrl+Shift+p*** and chose Quick Cmake  
+Create in project dir ***build*** and ***cd*** into it. After use this commands:    
+This command is  for configuring cmake to your system(compilator version, linker,cXX standart ETC)(Only need do it once)(***NEED TO BE IN "BUILD" DIR!!!***)  
+```shell
+$ cmake ..
+```  
+  To build/rebuild your project(again you must be inside ***build*** dir)(this commands build your project and "drops" cmake files(dependecnies. makefile e.tc) into build dir)  
+```shell  
+$ cmake build .
+```  
+After you can just use this command if you added new stuff into project(again must be inside ***build*** dir of your project)  
+```shell  
+$ make
+```
+
 ## How to use in MVS  
 ***How to create new project***  
 MVS->New Project
