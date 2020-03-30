@@ -17,7 +17,7 @@
 
 ## Visual Code
 <img src="https://imgur.com/N7XkVQk.png" height="65%"></img>  
-Its assumed what you already installed [gcc](https://github.com/RazdolbayOne/GuidesPull/tree/master/Make/Makefile), [CMake](https://github.com/RazdolbayOne/GuidesPull/tree/master/Make/CMake), [Cutycapt](https://github.com/RazdolbayOne/GuidesPull/tree/master/A11Y%20progs#installation), [OpenVG](https://github.com/RazdolbayOne/GuidesPull/tree/master/OpenVG#installation-and-confuguration) etc on Raspberry.In version 1.42 (2020) of VsCode Microsoft still did not added ARM procesors support(no intellsans and debuging) but they said they will add in future [proof](https://github.com/microsoft/vscode/issues/6442),but they added remote IDE functionality. It means what you code projectfor example in ubuntu and use Raspberry Pi as compiler/linker.    
+Its assumed what you already installed [gcc](https://github.com/RazdolbayOne/GuidesPull/tree/master/Make/Makefile), [CMake](https://github.com/RazdolbayOne/GuidesPull/tree/master/Make/CMake), [Cutycapt](https://github.com/RazdolbayOne/GuidesPull/tree/master/A11Y%20progs#installation), [OpenVG](https://github.com/RazdolbayOne/GuidesPull/tree/master/OpenVG#installation-and-confuguration) etc on Raspberry.In version 1.42 (2020) of VsCode Microsoft still did not added ARM procesors support(no intellsans and debuging) but they said they will add in future [proof](https://github.com/microsoft/vscode-cpptools/issues/429),but they added remote IDE functionality. It means what you code projectfor example in ubuntu and use Raspberry Pi as compiler/linker.    
 ### Prepare Raspberry Pi  
 * Pluged on Raspbbery and Enabled SSH   
     Start->Preferences->Raspberry Pi Configuration->Interfaces->["Enable SSH."](https://imgur.com/Qtg2m7v)
@@ -42,6 +42,16 @@ And most importanly what allows you to turn your IDE as remote one:
 
 
 ### Magick can start  
+1.In VS Code, select Remote-SSH: Connect to Host... from the Command Palette(F1)
+<img src="https://imgur.com/lav9xmT.png" ></img>   
+2.After a moment, VS Code will connect to the SSH server and set itself up. VS Code will keep you up-to-date using a progress notification and you can see a detailed log in the Remote - SSH output channel.  
+3.After you are connected, you'll be in an empty window. You can always refer to the Status bar to see which host you are connected to  
+<img src="https://imgur.com/A45TN5v.png" ></img>   
+Clicking on the Status bar item will provide a list of remote commands while you are connected.  
+4.You can then open any folder or workspace on the remote machine using ***File > Open...*** or ***File > Open Workspace...*** just as you would locally!  
+<img src="https://imgur.com/oeuPvfO.png" ></img>  
+From here, install any extensions you want to use when connected to the host and start editing!  
+[Microsoft readable source](https://code.visualstudio.com/docs/remote/ssh)  
 ### FAQ    
 VSCode can be installed on windows.Can I use it in same way as in Linux?  
 ```shell  
@@ -52,7 +62,9 @@ How you debug project?
 printf("DEBUG style \n");  
 ```
 How you use intelsanse if VSCode do not have ARM support? ->  
-
+```shell  
+under construction
+```  
 ## MVS  
 <img src="https://imgur.com/GoI1yZm.png" width="85%"></img>   
 ***THIS WORKS UNDER WINDOWS OS ONLY .***  (kinda tested on windows 7 and 10)  
