@@ -48,6 +48,7 @@ in VS installer
 	6)PROFIT!!!    
   
 ## How to use in VSCode  
+### Build and RUN
 ***For new project***              
 Create new folder(where project will be stored) and open that folder with VSCode/  
 Press ***Ctrl+Shift+p*** and chose Quick Cmake  
@@ -64,7 +65,23 @@ After you can just use this command if you added new stuff into project(again mu
 ```shell  
 $ make
 ```
-
+### Debug vs Release  
+by default(not sure) cmake makes debug build of your project(varbose one) to make .exe more slider,faster(not tested) and optimized by compiler you can build your project with release build(***IN ROOT OF YOUR PROJECT***)
+```shell  
+mkdir Release
+cd Release
+cmake -DCMAKE_BUILD_TYPE=Release ..
+make
+```  
+back to debug build(simpli delete Release dir and rebuild your project) or   
+```shell  
+mkdir Debug
+cd Debug
+cmake -DCMAKE_BUILD_TYPE=Debug ..
+make
+```
+my infoboard.exe in Release mode is 0.650096 MB , but in debug mode ->1.081072 MB
+(source)[https://stackoverflow.com/questions/7724569/debug-vs-release-in-cmake]  
 ## How to use in MVS  
 ***How to create new project***  
 MVS->New Project
