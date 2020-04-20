@@ -42,15 +42,29 @@ And most importanly what allows you to turn your IDE as remote one:
 
 
 ### Magick can start  
-1.In VS Code, select Remote-SSH: Connect to Host... from the Command Palette(F1)
-<img src="https://imgur.com/lav9xmT.png" ></img>   
-2.After a moment, VS Code will connect to the SSH server and set itself up. VS Code will keep you up-to-date using a progress notification and you can see a detailed log in the Remote - SSH output channel.  
-3.After you are connected, you'll be in an empty window. You can always refer to the Status bar to see which host you are connected to  
-<img src="https://imgur.com/A45TN5v.png" ></img>   
-Clicking on the Status bar item will provide a list of remote commands while you are connected.  
-4.You can then open any folder or workspace on the remote machine using ***File > Open...*** or ***File > Open Workspace...*** just as you would locally!  
-<img src="https://imgur.com/oeuPvfO.png" ></img>  
-From here, install any extensions you want to use when connected to the host and start editing!  
+1.In VS Code, press on green rect(at the left lower corner)  
+<img src="https://imgur.com/ErlhZxv.png" width="85%"></img>  
+2.chose from popup window ***Remote-SSH connect to host***   
+<img src="https://imgur.com/jiufgg0.png" width="85%"></img>  
+3.For new conection press on "Add New SSH Host"    
+<img src="https://imgur.com/aIg4UCN.png" width="85%"></img>  
+4.VS will ask you to witch device to connect. in edit box enter connection request/command  
+ example of input request
+```shell    
+ssh pi@${yours PIs hostname}
+```  
+<img src="https://imgur.com/X6tZc1X.png" width="85%"></img>  
+5.VS will ask where to save/edit your .ssh config chose first one.  
+5.1. inf .ssh config (see pic below how it looks like) you can rename your connection if needed change hostname/port/user etc  
+<img src="https://imgur.com/mqbNM6i.png" width="85%"></img>    
+6.press again on green rect to start session and chose needed conection  
+7.VS will ask you password . enter pasword of remote  machine  
+8.VS will do its magick(installation of vscode server etc)  
+9.install on remote machine(press in vscode extensions tab) additional extensions(c++ language support,cmake support etc)  
+10.press on Explorer (Ctrl+Shift+E) press on open folder button(you are now in yours pi cataloge LOL).  
+11.??????  
+12.PROFIT!  
+ 
 [Microsoft readable source](https://code.visualstudio.com/docs/remote/ssh)  
 ### FAQ    
 VSCode can be installed on windows.Can I use it in same way as in Linux?  
