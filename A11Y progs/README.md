@@ -11,6 +11,11 @@ Programs what are used in smartRTU project how to install them,how to configure 
   - [Debuging Makefile Project](#how-to-debug-makefile-project)
   - [BLACK SCREEN FIX](#if-you-have-black-screen-when-you-are-opening-vscode-a-k-a-doomscreen)
 - [Midnight Commander](#midnight-commander)
+- [FTP_SERVER](#midnight-commander)
+  - [Server installation on Linux](#server-installation-on-linux)
+  - [Client installation on Linux](#client-on-linux)
+  - [Server installation on Windows](#server-installation-on-win)
+  - [Client installation on Windows](#client-on-windows)
 - [Sources](#sources)
 ## CutyCapt  
 CutyCapt is comand line converter from ***HTML to image.***  
@@ -164,7 +169,38 @@ One tool that can help both Linux newbies and veterans is Midnight Commander, a 
 ```shell  
 $ sudo apt-get install mc
 ```
+## Ftp server  
+I exisist because transfering file from remote system to Pi is so hedius what I chose ftp to transfer crap from my PC to Pi;    
+### Server installation on Linux  
+1) Install ftp server:
+```shell  
+$ sudo apt-get install vsftpd
+```  
+2) ***Configuring FTP server*** Most VSFTPD’s configuration takes place in ***/etc/vsftpd.conf*** need to be root btw to edit it :  
+2.1) Enable Uploading to the FTP server by uncommenting thw line :
+```  
+write_enable=YES
+```  
+2.2) Allow Local Users to Login uncomment if it is commented:  
+```  
+local_enable=YES
+```  
+3) Restart your FTP server:  
+```shell
+$ sudo systemctl restart vsftpd
+```  
+[Source](https://itsfoss.com/set-ftp-server-linux/)  
+### Server installation on Win  
 
+### Client on Linux  
+
+## Client on Windows   
+Just download and install [FileZilla](https://filezilla-project.org/)  
+<img src="https://imgur.com/w6uryw7.png"></img>  
+ХОСТ ->hostname to connect to your server  
+Имя пользовотеля ->PIs name a.k.a username  
+Пароль -> password to remote server  
+Кнапка Быстрое соединения -> after filling previous editboxes and pressing this button your will connect to ftp server   
 ### Sources  
 Here is sored all resources where data was found   
 [ISSUES | ](https://github.com/headmelted/codebuilds/issues/43>)[Another installation Guide | ](https://medium.com/@melzoghbi/install-visual-studio-code-on-raspbian-eedc566c616d)
