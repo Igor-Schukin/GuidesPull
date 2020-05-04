@@ -191,9 +191,9 @@ $ sudo systemctl restart vsftpd
 ```  
 [Source](https://itsfoss.com/set-ftp-server-linux/)  
 ### Server installation on Win  
-
+The Awesome Emptiness Of What Is In Front Of YOU  
 ### Client on Linux  
-
+The Awesome Emptiness Of What Is In Front Of YOU  
 ## Client on Windows   
 Just download and install [FileZilla](https://filezilla-project.org/)  
 <img src="https://imgur.com/w6uryw7.png"></img>  
