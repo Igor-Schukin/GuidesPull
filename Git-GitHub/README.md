@@ -18,6 +18,11 @@ $ sudo apt install git-all
 Naught but the ***better see Interactive sources*** remaining to disclose  
 The site of this forgotten Babylon.   
   
+Download specific branch of repo:  
+```shell  
+$ git clone -b '${branch-name}' ${URL of repo}
+```
+  
 ## Info  
 ### Interactive sources  
 [BEST OF THE BEST ABOUT GIT #1 | ](https://www.udacity.com/course/version-control-with-git--ud123)
