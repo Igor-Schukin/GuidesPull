@@ -1,5 +1,5 @@
 # GuidesPull
-Guides and guides for SmartRTU project
+Guides and guides for [SmartRTU project](https://github.com/RazdolbayOne/SmartRTU)
 ## Into the rabithole  
 
 1. [Install Raspbian OS on Raspberry Pi](https://github.com/RazdolbayOne/GuidesPull/tree/master/RaspberryPi)    
