@@ -26,6 +26,7 @@ Guides and guides for [SmartRTU project](https://github.com/RazdolbayOne/SmartRT
 ADDITIONAL  
 [->Remote_Linux_IDE.](https://github.com/RazdolbayOne/GuidesPull/blob/master/Remote_Linux_IDE/README.md#why)  
 [->FTP for file transfer](https://github.com/RazdolbayOne/GuidesPull/blob/master/A11Y%20progs/README.md#midnight-commander)  
+[->CODE STYLE OF PROJECT](https://github.com/RazdolbayOne/GuidesPull/tree/master/code_style)  
 [Fear is the oldest and strongest of human feelings, and the most
 ancient and most fearful - fear of VIM](https://github.com/RazdolbayOne/GuidesPull/blob/master/Misc/README.md#behold-the-heartbreaking-fear-of-vim)  
 [Vault of usefull functions](https://github.com/RazdolbayOne/GuidesPull/tree/master/C%2B%2B#list-of-useful-functions)  
