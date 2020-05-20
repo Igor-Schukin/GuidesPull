@@ -1,12 +1,11 @@
 # This topic stands for coding style of C++ in project.  
 * avoid "using namespace " keep clean project from namespacing chaos   
-* variables_in_lower_snake_style   //*  
-* geters and setters will be like so -> get_my_beloved_variable() and set_it_to_the_hights()//*  
-* private methods/variables have prefix "m_"  
-* methods naming style is like so MyClass->MySmoothMethod(); //*   
-* if method only have one word then it is like so MyClass->Method(); //*  
-  
-*PROBABLY NEED TO GO FULL ON INTO PYTHON STYLE
+* variables_in_lower_snake_style     
+* geters and setters will be like so -> get_my_beloved_variable() and set_it_to_the_hights()  
+* private methods/variables have prefix ***" m_ "***  
+* methods naming style is like so MyClass->MySmoothMethod();    
+* if method only have one word then it is like so MyClass->Method();   
+
 * example of class struct and code style
 ```C++  
 //class template
