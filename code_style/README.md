@@ -15,7 +15,7 @@ public:
   void Derp();
   
   int get_my_variable();
-  void set_my_variable(int aVar);
+  void set_my_variable(int new_variable);
 private:
   void m_MyHidedMethod();
   int m_my_variable;
