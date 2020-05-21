@@ -4,7 +4,7 @@
 * geters and setters will be like so -> get_my_beloved_variable() and set_it_to_the_hights()  
 * private methods/variables have prefix ***" m_ "***  
 * methods naming style is like so MyClass->MySmoothMethod();    
-* if method only have one word then it is like so MyClass->Method();   
+* if method only have one word then it is like so MyClass->method();   
 
 * example of class struct and code style. file foo/src/bar/baz.h in project foo  
 ```C++  
@@ -25,7 +25,7 @@
 class MyClass{
 public:
   void MySmoothMethod();
-  void Derp();
+  void derp();
   
   int get_my_variable();
   void set_my_variable(int new_variable);
