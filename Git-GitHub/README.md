@@ -5,6 +5,7 @@ By far, the most widely used modern version control system in the world today .[
 
 - [Installation](#installation)
 - [Basic commands and concepts](#basic-commands-and-concepts)
+  - [Download specific branch of repo](#download-specific-branch-of-repo)
 - [Info](#info)
   - [Interactive sources](#interactive-sources)
   - [Readable stuff](#readable-stuff)
@@ -20,7 +21,7 @@ $ git --version
 Naught but the ***better see Interactive sources*** remaining to disclose  
 The site of this forgotten Babylon.   
   
-Download specific branch of repo:  
+### Download specific branch of repo:  
 ```shell  
 $ git clone -b '${branch-name}' ${URL of repo}
 ```
