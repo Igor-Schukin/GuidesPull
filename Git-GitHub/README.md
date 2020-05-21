@@ -12,7 +12,9 @@ By far, the most widely used modern version control system in the world today .[
 ## Installation  
 If you’re on a Debian-based distribution, such as Ubuntu, try apt if not use [else](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git):  
 ```shell  
-LOL after 2 years being part of project i realised what git is already pre installed of Pi's.......
+LOL after 2 years being part of project I realised what git is already pre installed on Pi by default.......
+Do not belive me? Type in console:
+$ git --version
 ```  
 ## Basic commands and concepts  
 Naught but the ***better see Interactive sources*** remaining to disclose  
