@@ -33,7 +33,7 @@ to:
 8)$ sudo make test  
 ```  
 After this command must be some kind of slideshow what shows what OpenVG can do if not well check this-> *  
-9)To install the shapes library as a system-wide shared library type this in console(not in /client but in /openvg folder)  
+9)To install the shapes library as a system-wide shared library type this in console(***not in /client but in /openvg folder***)  
 ```shell  
 9.1)$ make library
 9.2)$ sudo make install
