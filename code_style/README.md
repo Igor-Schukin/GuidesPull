@@ -14,9 +14,9 @@
 #ifndef FOO_BAR_BAZ_H_
 #define FOO_BAR_BAZ_H_
 
-//C system headers 
+//C system headers(more precisely: headers in angle brackets with the .h extension), e.g. <unistd.h>, <stdlib.h> 
 
-//C++ standard library headers (without file extension)
+//C++ standard library headers (without file extension), e.g. <algorithm>, <cstddef>.  
 
 //Other libraries' .h files 
 
