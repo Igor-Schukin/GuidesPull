@@ -1,7 +1,6 @@
-# This Misc dir where unreleated and realeted stuff lives
-- [VIM](#behold-the-heartbreaking-fear-of-vim)
-
-
+# This Misc dir where unreleated and realeted stuff lives  
+<img src="https://imgur.com/yJxPfJY.png" width="60%"></img>  
+- [VIM](#behold-the-heartbreaking-fear-of-vim)  
 # Behold the heartbreaking fear of VIM  
 <img src="https://imgur.com/o1Ggzof.png" ></img>   
 <img src="https://imgur.com/ihthDMB.png" ></img>   
