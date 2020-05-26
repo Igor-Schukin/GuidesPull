@@ -1,5 +1,6 @@
 # Pull for Raspberry stuff  
-INstallation,update,modification e.t.c
+INstallation,update,modification e.t.c  
+<img src="https://imgur.com/7RMisud.png" width="60%"></img>   
 ## Installation of Raspbian OS    
 How to install Raspbian OS   
    
