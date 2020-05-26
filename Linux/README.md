@@ -10,7 +10,6 @@ Topic where all abut Linux shell  is stored
   - [Redirect all error to file](#syntax-to-redirect-all-error-to-file)
   - [Redirect both output (stdout) and errors (stderr) to different files](#syntax-to-redirect-both-output-and-errors-to-different-files)
   - [table of 10 most commonly used ways](#table-of-signs)
-  - [List explaining commands](#list-of-commands)
 ## Interactive source  
 [BEST OF THE BEST | ](https://linuxsurvival.com/linux-tutorial-introduction/)[linux.org | ](http://linuxcommand.org/)[Kinda OK | ](https://commandlinepoweruser.com/)[Configuring Linux Web Servers | ](https://www.udacity.com/course/configuring-linux-web-servers--ud299)  
 ## Readable  
@@ -43,6 +42,5 @@ $ command-name 1> output.txt 2> errors.txt
 ```  
 ### Table of signs  
 <img src="https://imgur.com/9phBUso.png" ></img>  
-### List of commands
 <img src="https://imgur.com/ju7PZZP.png" ></img>  
 [Source one | ](https://askubuntu.com/questions/420981/how-do-i-save-terminal-output-to-a-file)[source two](https://www.cyberciti.biz/faq/linux-redirect-error-output-to-file/)
