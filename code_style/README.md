@@ -27,8 +27,8 @@ public:
   void MySmoothMethod();
   void derp();
   
-  int get_my_variable();
-  void set_my_variable(int new_variable);
+  int Getmy_variable();//google style-> get_my_variable();
+  void Setmy_variable(int new_variable);//google style ->set_my_variable
 private:
   void m_MyHidedMethod();
   int m_my_variable;
