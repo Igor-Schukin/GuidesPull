@@ -45,3 +45,4 @@ $ command-name 1> output.txt 2> errors.txt
 <img src="https://imgur.com/9phBUso.png" ></img>  
 ### List of commands
 <img src="https://imgur.com/ju7PZZP.png" ></img>  
+[Source one | ](https://askubuntu.com/questions/420981/how-do-i-save-terminal-output-to-a-file)[source two](https://www.cyberciti.biz/faq/linux-redirect-error-output-to-file/)
