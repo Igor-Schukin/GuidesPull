@@ -21,7 +21,8 @@ Programs what are used in smartRTU project how to install them,how to configure 
 ## CutyCapt  
 CutyCapt is comand line converter from ***HTML to image.***  
 Support formats for img ->***SVG, PDF, PS, PNG, JPEG, TIFF, GIF***  
-btw have support of javascript.
+btw have support of javascript.  
+Kinda have version of [cutycapt with transperent background](https://github.com/RazdolbayOne/GuidesPull/blob/master/A11Y%20progs/CutyCapt/CutyCapt-master.7z) but it must be compiled and tested  
 ### Installation     
 ```shell  
 $ sudo apt-get update upgrade
