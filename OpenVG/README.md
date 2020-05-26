@@ -1,6 +1,7 @@
  
- # All info about OpenVG  
+ # All info about OpenVG and Libshape  
  OpenVG is an API designed for hardware-accelerated 2D vector graphics.
+<img src="https://imgur.com/7mp02Wr.png" ></img>   
 - [Installation & Confuguration  ](#installation-and-confuguration)
 - [First Program](#first-program)
 - [LibShape](#libshape)
