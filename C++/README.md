@@ -6,6 +6,9 @@
   - [JSON++](#json)
   - [cURL](#curl)
   - [CPR](#cpr)
+- [Stderr and Stdout](#stderr-and-stdout)  
+  - [C Way](#c-ways)
+  - [C++ Way](#cxx-ways)
 - [List of useful functions  ](#list-of-useful-functions)  
   - [Get Image Size](#get-image-size)
   - [Button press detection](#button-press-detection)
@@ -15,6 +18,7 @@ Read through and bookmark the[C++ Standard Guidelines](https://github.com/isocpp
 [Годные Видео уроки по С++](https://www.youtube.com/watch?v=kRcbYLK3OnQ&list=PLQOaTSbfxUtCrKs0nicOg2npJQYSPGO9r) от #SimpleCode  
 [На буржуйском годные уроки и разборы функционала С++](https://www.youtube.com/channel/UCEOGtxYTB6vo6MQ-WQ9W_nQ)  
 [C++ The complete reference 4th | book](http://160592857366.free.fr/joe/ebooks/ShareData/C++%20-%20The%20Complete%20Reference%204e.pdf)
+
 ## With OpenVG
 How to install & configure OpenVG you can find [here](https://github.com/RazdolbayOne/GuidesPull/tree/master/OpenVG).    
 Part to add into OpenVG project to work with C++
@@ -137,6 +141,36 @@ CPR is OOP wrapper around cURL lib. Can do REST HTTP requests asynchronos too. a
 
 ## Documentation  
 [its here | ](https://whoshuu.github.io/cpr/)[or in its github ](https://github.com/whoshuu/cpr)  
+## Stderr and Stdout  
+***Stdout***, also known as standard output, is the default file descriptor where a process can write output.  
+***Stderr***, also known as standard error, is the default file descriptor where a process can write error messages.    
+### C ways  
+```C  
+#include<cstdio>
+```  
+Example For ***Stdout***:  
+```C  
+fprintf(stdout, "%s", "Hello world\n");
+```  
+Example For ***Stderr***:  
+```C  
+fprintf(stderr, "%s", "Stack overflow!\n"); 
+```  
+### CXX ways  
+```C++  
+#include <iostream>
+```  
+Example For ***Stdout***:  
+```C++  
+std::cout<<"Hello world\n";
+```  
+Example For ***Stderr***:  
+```C++  
+std::cerr << "Stack overflow!\n";
+```  
+[CXX guide lines](http://www.cplusplus.com/doc/tutorial/basic_io/)  
+[stacowerflow about sterr](https://stackoverflow.com/questions/39002052/how-i-can-print-to-stderr-in-c)  
+  
 ## List of useful functions  
 Functions/Methods for project and most common tasks.  
 ### Get Image Size
