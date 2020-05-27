@@ -16,7 +16,8 @@
 - [Sources](#sources)  
 ## How to write Userfriendly C++
 Read through and bookmark the[C++ Standard Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md)  
-[Годные Видео уроки по С++](https://www.youtube.com/watch?v=kRcbYLK3OnQ&list=PLQOaTSbfxUtCrKs0nicOg2npJQYSPGO9r) от #SimpleCode  
+[ГОДНОТИЩЕ мое почтение по С++ от шарашкиной конторы с абриавиатурой МФТИ](https://www.youtube.com/watch?v=MWsfHQaUzI0&list=PLRDzFCPr95fL_5Xvnufpwj2uYZnZBBnsr)  
+[Водные видео уроки по С++](https://www.youtube.com/watch?v=kRcbYLK3OnQ&list=PLQOaTSbfxUtCrKs0nicOg2npJQYSPGO9r) от #SimpleCode  
 [На буржуйском годные уроки и разборы функционала С++](https://www.youtube.com/channel/UCEOGtxYTB6vo6MQ-WQ9W_nQ)  
 [C++ The complete reference 4th | book](http://160592857366.free.fr/joe/ebooks/ShareData/C++%20-%20The%20Complete%20Reference%204e.pdf)
 
