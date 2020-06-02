@@ -1,7 +1,7 @@
 # This topic stands for coding style of C++ in project.  
 * avoid "using namespace " keep clean project from namespacing chaos   
 * variables_in_lower_snake_style     
-* geters and setters will be like so -> Getmy_beloved_variable() and Setit_to_the_hights()  
+* geters and setters will be like so -> Get_my_beloved_variable() and Set_it_to_the_hights()  
 * private methods/variables have prefix ***" m_ "***  
 * methods naming style is like so MyClass->MySmoothMethod();    
 * if method only have one word then it is like so MyClass->method();   
@@ -27,8 +27,8 @@ public:
   void MySmoothMethod();
   void derp();
   
-  int Getmy_variable();//google style-> get_my_variable();
-  void Setmy_variable(int new_variable);//google style ->set_my_variable
+  int Get_my_variable();//google style-> get_my_variable();
+  void Set_my_variable(int new_variable);//google style ->set_my_variable
 private:
   void m_MyHidedMethod();
   int m_my_variable;
