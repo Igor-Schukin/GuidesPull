@@ -11,7 +11,7 @@ Topic where all abut Linux shell  is stored
   - [Redirect both output (stdout) and errors (stderr) to different files](#syntax-to-redirect-both-output-and-errors-to-different-files)
   - [table of 10 most commonly used ways](#table-of-signs)
 ## Interactive source  
-[BEST OF THE BEST | ](https://linuxsurvival.com/linux-tutorial-introduction/)[linux.org | ](http://linuxcommand.org/)[Kinda OK | ](https://commandlinepoweruser.com/)[Configuring Linux Web Servers | ](https://www.udacity.com/course/configuring-linux-web-servers--ud299)  
+[BEST OF THE BEST | ](https://linuxsurvival.com/linux-tutorial-introduction/)[linux.org | ](http://linuxcommand.org/)[BEST OF THE BEST 2(multiple tasks with linux shell) | ](https://www.hackerrank.com/domains/shell)[Kinda OK | ](https://commandlinepoweruser.com/)[Configuring Linux Web Servers | ](https://www.udacity.com/course/configuring-linux-web-servers--ud299)  
 ## Readable  
 [Advanced Bash-Scripting Guide. An in-depth exploration of the art of shell scripting | ](http://www.tldp.org/LDP/abs/html/index.html)[A Guide to 100 (ish) Useful Unix Commands | ](http://oliverelliott.org/article/computing/ref_unix/)  
 
