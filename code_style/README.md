@@ -8,6 +8,12 @@
 
 * example of class struct and code style. file foo/src/bar/baz.h in project foo  
 ```C++  
+/*
+MODUL KNOWS ONLY WHAT IT MUST KNOW!!!
+*/
+constexpr int SOCKETS_COUNT =  4;
+#define SOME_RANDOM_CONST_INT 5
+
 //class template
 #pragma once
 //<PROJECT>_<PATH>_<FILE>_H_
