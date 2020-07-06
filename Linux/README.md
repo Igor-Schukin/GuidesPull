@@ -9,7 +9,10 @@ Topic where all abut Linux shell  is stored
   - [Redirect all output to file](#syntax-to-redirect-all-output-to-file)
   - [Redirect all error to file](#syntax-to-redirect-all-error-to-file)
   - [Redirect both output (stdout) and errors (stderr) to different files](#syntax-to-redirect-both-output-and-errors-to-different-files)
-  - [table of 10 most commonly used ways](#table-of-signs)
+  - [table of 10 most commonly used ways](#table-of-signs)  
+- [Turn process into bacground and foreground](#fg-and-bg)  
+  - [Process into Background ](#process-into-background)
+  - [Process into Foreground ](#process-into-foreground)
 ## Interactive source  
 [BEST OF THE BEST | ](https://linuxsurvival.com/linux-tutorial-introduction/)[linux.org | ](http://linuxcommand.org/)[BEST OF THE BEST 2(multiple tasks with linux shell) | ](https://www.hackerrank.com/domains/shell)[Kinda OK | ](https://commandlinepoweruser.com/)[Configuring Linux Web Servers | ](https://www.udacity.com/course/configuring-linux-web-servers--ud299)  
 ## Readable  
@@ -43,4 +46,27 @@ $ command-name 1> output.txt 2> errors.txt
 ### Table of signs  
 <img src="https://imgur.com/9phBUso.png" ></img>  
 <img src="https://imgur.com/ju7PZZP.png" ></img>  
-[Source one | ](https://askubuntu.com/questions/420981/how-do-i-save-terminal-output-to-a-file)[source two](https://www.cyberciti.biz/faq/linux-redirect-error-output-to-file/)
+[Source one | ](https://askubuntu.com/questions/420981/how-do-i-save-terminal-output-to-a-file)[source two](https://www.cyberciti.biz/faq/linux-redirect-error-output-to-file/)  
+## Fg and Bg  
+How to run exe and use same console
+Mostly use linux command jobs  
+```shell  
+$ jobs
+```
+### Process into Background  
+1)first run your exe thru console  
+2)press <kbd>Ctrl</kbd> + <kbd>Z</kbd> to freez your exe  
+3)and use command to continue process as background task  
+```shell  
+$ bg
+```  
+### Process into Foreground  
+How to turn process from background into foregraund one 
+1)use command "jobs" to see what processes are in background  
+2)list will appier  
+3)to run your process into foreground  
+```shell  
+$ fg %{number of your bg process}
+```  
+4)????  
+5)PROFIT  
