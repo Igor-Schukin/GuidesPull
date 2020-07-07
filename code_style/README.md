@@ -34,7 +34,7 @@ public:
   void derp();
   
   int Get_my_variable();//google style-> get_my_variable();
-  void Set_my_variable(int new_variable);//google style ->set_my_variable
+  void Set_my_variable(int a_new_variable);//google style ->set_my_variable
 private:
   void m_MyHidedMethod();
   int m_my_variable;
