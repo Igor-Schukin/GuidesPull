@@ -139,6 +139,19 @@ int main()
 ### CPR  
 CPR is OOP wrapper around cURL lib. Can do REST HTTP requests asynchronos too. and other stuff like authentication.. ***WORKS ONLY ON CMAKE PROJECTS!!!***   
 [source](https://github.com/whoshuu/cpr)  
+***how devs want you to install***  
+If you already have a project you need to integrate C++ Requests with, the primary way is to use CMake `fetch_content`. Add the following to your `CMakeLists.txt`.  
+```cmake
+include(FetchContent)
+FetchContent_Declare(cpr GIT_REPOSITORY https://github.com/whoshuu/cpr.git GIT_TAG c8d33915dbd88ad6c92b258869b03aba06587ff9) # the commit hash for 1.5.0
+FetchContent_MakeAvailable(cpr)
+```  
+This will produce the target `cpr::cpr` which you can link against the typical way:  
+```cmake
+target_link_libraries(your_target_name PRIVATE cpr::cpr)
+```  
+***varik whithout fetch stuff***   
+under construction  
 ## How to install into existing project  
 
 ## Documentation  
