@@ -3,9 +3,10 @@
 - [WHY I exist?!](#why)  
 - [Turn your VSCODE into remote IDE |INTRO|](#visual-code)
   - [Step 0 ](#prepare-raspberry-pi)
-  - [Step 1 ](#prepare-vscode)
+  - [Step 1 ](#preparations-vscode)
   - [Step 2 ](#magick-can-start)
-  - [FAQ ](#faq)
+  - [Step 3 ](#magick-ingredients-aka-extensions)
+- [FAQ ](#faq)
 - [Turn your Microsoft Visual Studio into remote IDE |INTRO|](#mvs)
   - [What do you need to start:](#what-do-you-need-to-start)
   - [VS configuration part](#vs-configuration-part)
@@ -30,22 +31,8 @@ Its assumed what you already installed [gcc](https://github.com/RazdolbayOne/Gui
     ```shell
     $ sudo apt-get install openssh-server g++ gdb gdbserver
     ```
-### Prepare VsCode  
-Installed [VsCode](https://code.visualstudio.com/) on your working machine not on Pi.  
-Installed Extensions in VsCode server part:  
-* ["C/C++ from microsoft"-debugger/intelsense/code browsing](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)   
-* ["c/c++ definition" from regnofwebber-allows to create definitions like in vscode](https://marketplace.visualstudio.com/items?itemName=reignofwebber.c-cpp-definition-generator)    
-* ["CMake"from trwxs -CMake languages support](https://marketplace.visualstudio.com/items?itemName=twxs.cmake)  
-* ["CMake Tools" from Microsoft-Extended CMake support in Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools)  
-* ["CMake" from rwxs CMake language support](https://marketplace.visualstudio.com/items?itemName=twxs.cmake)   
-* ["CMake tools" from MS extended CMake support](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools) 
-* ["Clang-Format" from xaver-is a tool to format C/C++](https://marketplace.visualstudio.com/items?itemName=xaver.clang-format) In vscode File->Preferences->Settings in search field type "clang" and in field change to google style  
-<img src="https://imgur.com/OAY6D0n.png" width="85%"></img>  
-now vscode will "force/help" you to write code in google code style  
-
-* ["Commit Message Editor" from Adam Bender - allows better edit commit messages in conveniant way](https://marketplace.visualstudio.com/items?itemName=adam-bender.commit-message-editor)  
-  
-And most importanly what allows you to turn your IDE as remote one (***install on client side***) is: 
+### Preparations VsCode  
+Most importanly what allows you to turn your IDE as remote one (***install on client side***) is: 
 * ["Remote Development"-Microsoft](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)  
 
 
@@ -74,6 +61,23 @@ ssh pi@${yours PIs hostname}
 12.PROFIT!  
  
 [Microsoft readable source](https://code.visualstudio.com/docs/remote/ssh)  
+
+### Magick ingredients aka extensions  
+Installed [VsCode](https://code.visualstudio.com/) on your working machine not on Pi.  
+Installed Extensions in VsCode server part:  
+* ["C/C++ from microsoft"-debugger/intelsense/code browsing](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)   
+* ["c/c++ definition" from regnofwebber-allows to create definitions like in vscode](https://marketplace.visualstudio.com/items?itemName=reignofwebber.c-cpp-definition-generator)    
+* ["CMake"from trwxs -CMake languages support](https://marketplace.visualstudio.com/items?itemName=twxs.cmake)  
+* ["CMake Tools" from Microsoft-Extended CMake support in Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools)  
+* ["CMake" from rwxs CMake language support](https://marketplace.visualstudio.com/items?itemName=twxs.cmake)   
+* ["CMake tools" from MS extended CMake support](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools) 
+* ["Clang-Format" from xaver-is a tool to format C/C++](https://marketplace.visualstudio.com/items?itemName=xaver.clang-format) In vscode File->Preferences->Settings in search field type "clang" and in field change to google style  
+<img src="https://imgur.com/OAY6D0n.png" width="85%"></img>  
+now vscode will "force/help" you to write code in google code style  
+
+* ["Commit Message Editor" from Adam Bender - allows better edit commit messages in conveniant way](https://marketplace.visualstudio.com/items?itemName=adam-bender.commit-message-editor)  
+  
+
 ### FAQ    
 VSCode can be installed on windows.Can I use it in same way as in Linux?  
 ```shell  
