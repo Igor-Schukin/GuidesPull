@@ -1,6 +1,6 @@
 # Pull for Raspberry stuff  
-INstallation,update,modification e.t.c  
-<img src="https://imgur.com/7RMisud.png" width="60%"></img>   
+INstallation,update,modification e.t.c    
+<img src="https://imgur.com/gJXWkhH.png" width="60%"></img>  
 ## Installation of Raspbian OS    
 How to install Raspbian OS   
    
@@ -26,3 +26,4 @@ How to install Raspbian OS
 <img src="https://imgur.com/j17nYAe.png" width="90%"></img>   
 Sources:  
 [NOOBS | ](https://www.raspberrypi.org/documentation/installation/noobs.md)[#1 | ](https://www.raspberrypi.org/downloads/)[#2 | ](https://www.raspberrypi.org/downloads/raspbian/)[Forum | ](https://www.raspberrypi.org/forums/)  
+[old image](<img src="https://imgur.com/7RMisud.png" width="60%"></img> )
