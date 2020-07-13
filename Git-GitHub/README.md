@@ -17,6 +17,10 @@ LOL after 2 years being part of project I realised what git is already pre insta
 Do not belive me? Type in console:
 $ git --version
 ```  
+Just in case I will left instalation command here
+```shell  
+$ sudo apt-get install git -y
+```  
 ## Basic commands and concepts  
 Naught but the ***better see Interactive sources*** remaining to disclose  
 The site of this forgotten Babylon.   
