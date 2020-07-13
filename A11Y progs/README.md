@@ -36,7 +36,7 @@ $ cutycapt --url=http://www.google.com --out=google.png --min-width=1920 --min-h
 * ***local html page into image***  
 (--url=file:$(FULL_PATH)/$(FILE_FULL_NAME) --out=$(FILES_NAME).$(EXTENSION))   
 ```shell  
-$ cutycapt --url=file:/hone/pi/Desktop/WebPage.html --out=tempPage.png  
+$ cutycapt --url=file:/home/pi/Desktop/WebPage.html --out=tempPage.png  
 ```
 
 ### How to use CutyCapt on a Headless server  
