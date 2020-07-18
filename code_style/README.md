@@ -2,7 +2,7 @@
 * avoid "using namespace " keep clean project from namespacing chaos   
 * variables_in_lower_snake_style     
 * geters and setters will be like so -> Get_my_beloved_variable() and Set_it_to_the_hights()  
-* private methods/variables have prefix ***" m_ "***  
+* private methods/variables have postfix ***" _ "***  
 * methods naming style is like so MyClass->MySmoothMethod();    
 * if method only have one word then it is like so MyClass->method();   
 
@@ -36,8 +36,8 @@ public:
   int Get_my_variable();//google style-> get_my_variable();
   void Set_my_variable(int a_new_variable);//google style ->set_my_variable
 private:
-  void m_MyHidedMethod();
-  int m_my_variable;
+  void MyHidedMethod_();
+  int my_variable_;
 };
 #endif /*FOO_BAR_BAZ_H_*/
 ```  
