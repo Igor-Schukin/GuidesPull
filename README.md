@@ -3,7 +3,7 @@ Guides and guides for [SmartRTU project](https://github.com/RazdolbayOne/SmartRT
 ## Into the rabithole  
 
 1. [Install Raspbian OS on Raspberry Pi](https://github.com/RazdolbayOne/GuidesPull/tree/master/RaspberryPi)    
- 1.1 [TROBLESHOOTING](https://github.com/RazdolbayOne/GuidesPull/blob/master/RaspberryPi/README.md#trouble-fix) 
+ 1.1 [TROBLESHOOTING](https://github.com/RazdolbayOne/GuidesPull/blob/master/RaspberryPi/README.md#trouble-fix)  
  1.2 [Learn about Linux shell if you know me then skip me...](https://github.com/RazdolbayOne/GuidesPull/tree/master/Linux)  
   
 2. [Install gcc/Make or CMake](https://github.com/RazdolbayOne/GuidesPull/tree/master/Make#how-to-install-make)  
