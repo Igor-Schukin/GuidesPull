@@ -29,4 +29,5 @@ Install extenstion for VSCODE what allows you faster generate Doxygen comments o
 [Its here](https://marketplace.visualstudio.com/items?itemName=cschlosser.doxdocgen)
 
 
-[Source](https://www.youtube.com/watch?v=TtRn3HsOm1s)
+[Source](https://www.youtube.com/watch?v=TtRn3HsOm1s)  
+[Linux example](https://www.youtube.com/watch?v=LZ5E4vEhsKs)
