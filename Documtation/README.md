@@ -12,12 +12,20 @@ Solvation for this is Doxygen .
 # Doxygen  
 Doxygen is the de facto standard tool for generating documentation from annotated C++ sources  
 <img src="https://imgur.com/RN1qOqY.png" width="45%"></img>  
-## Installation  
+
+# Manual  
+[I AM HUGE AND IMPORTANT!](https://www.doxygen.nl/manual/index.html)  
+
+# Installation  
 Instalation on Pi  
 ```shell  
 $ sudo apt-get install doxygen -y
 ```  
-Install extenstion for VSCODE what allows you faster generate comments or you can do this by hands :)  
+To get the more information about Doxygen, use the following command –  
+```shell  
+$ doxygen --help
+```  
+Install extenstion for VSCODE what allows you faster generate Doxygen comments or you can do this by hands :)  
 [Its here](https://marketplace.visualstudio.com/items?itemName=cschlosser.doxdocgen)
 
 
