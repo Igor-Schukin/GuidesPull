@@ -138,7 +138,7 @@ int main()
 [Установка для шминдоуса | ](https://stackoverflow.com/questions/53861300/how-do-you-properly-install-libcurl-for-use-in-visual-studio-2017)  
 ### CPR  
 CPR is OOP wrapper around cURL lib. Can do REST HTTP requests asynchronos too. and other stuff like authentication.. ***WORKS ONLY ON CMAKE PROJECTS!!!***   
-[source](https://github.com/whoshuu/cpr)  
+[source REPO ](https://github.com/whoshuu/cpr)[DOCUMENTATION](https://whoshuu.github.io/cpr/)  
 ***how devs want you to install***  
 If you already have a project you need to integrate C++ Requests with, the primary way is to use CMake `fetch_content`. Add the following to your `CMakeLists.txt`.  
 ```cmake
