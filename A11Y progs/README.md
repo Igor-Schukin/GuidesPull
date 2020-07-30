@@ -50,7 +50,7 @@ So it may take longer. If you want to take multiple screenshots
 then you start can Xvfb server as a background daemon beforehand.  
 After installing Xvfb change the command to run  cutycapt as:  
 ```shell  
-$ xvfb-run --server-args="-screen 0, 1280x1200x24" cutycapt --url=http://www.demo.com --out=demo.png
+$ xvfb-run -a --server-args="-screen 0, 1280x1200x24" cutycapt --url=http://www.demo.com --out=demo.png
 ```  
 ***--server-args and dimension*** are optional here.  
 
