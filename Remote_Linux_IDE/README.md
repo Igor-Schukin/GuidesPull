@@ -76,6 +76,7 @@ Installed Extensions in VsCode server part:
 now vscode will "force/help" you to write code in google code style  
 
 * ["Commit Message Editor" from Adam Bender - allows better edit commit messages in conveniant way](https://marketplace.visualstudio.com/items?itemName=adam-bender.commit-message-editor)  
+* ["Git history"- allows you to see what changed from previus commit compare version and more using git](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)  
   
 
 ### FAQ    
