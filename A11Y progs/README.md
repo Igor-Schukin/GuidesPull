@@ -74,9 +74,6 @@ Example of webpage
 	</body>
 </html>
 ```  
-* On error(wrong html input for example or html does not exist) runs 15 secons and outputs blank image in requested format  
-* On syntax error(wrong cutycapt request command for example) just dumps into console cutycapts "help"  
-* CutyCapt is capricious on white spaces in request command can dump into console its help or even do not tell anything...  
 * More info about what command args are for CutyCapt are :  
 ```shell  
 $ cutycapt --help
