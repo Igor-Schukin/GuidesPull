@@ -2,6 +2,7 @@
 Programs what are used in smartRTU project how to install them,how to configure them and how to use them......
 <img src="https://imgur.com/WNjwgTJ.png"></img>   
 - [CutyCapt](#cutycapt)
+  - [What do we know about CutyCapt](#цhat-do-we-know-about-cutycapt)
   - [Installation](#installation)
   - [How to use it](#how-to-use-it)
   - [How to use CutyCapt on a Headless server](#how-to-use-cutycapt-on-a-headless-server)
@@ -21,11 +22,71 @@ Programs what are used in smartRTU project how to install them,how to configure 
 ## CutyCapt  
 CutyCapt is comand line converter from ***HTML to image.***  
 Support formats for img ->***SVG, PDF, PS, PNG, JPEG, TIFF, GIF***  
-btw have support of javascript.  
+btw have support of javascript. 
+### What do we know about CutyCapt  
+* Support formats for output img ->***SVG, PDF, PS, PNG, JPEG, TIFF, GIF***  
+* Can transform html page using url to web page on distant server  
+* Can transform html page using url on local html file in system  
+* Can't set output image const size, but it can be changed if in source html file (inside style tag )  create container tag and set to const size,
+wraping all of webpage content in it :   
+```html  
+#container{
+          /*Styling for any element with the id="container" */
+          /*Output image will be 1920x1080 */
+
+					 width:1912px;  /* -8 px from neede width */
+           height:1032px; /*-48px from needed height*/
+            }
+```  
+Example of webpage  
+```html  
+<!Doctype HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>fixed layout</title>
+		<style>
+			
+			/* This is a comment it is not read by any browser
+			This is where the css styling goes */
+		
+			body{
+			color:#000;
+			background-image: url('img/seaEdgeHD.png');
+			}
+			
+      /*Styling for any element with the id="container" */
+			#container{
+			width:1912px; /* -8 px from neede width */
+			height:1032px ;/*-48px from needed height*/
+            }
+			h1 {text-align: center;}
+			p {text-align: center;}
+		</style>
+	</head>
+	<body>
+    /* Cutycapt output image will be 1920x1080 if content is wrapped around id="container", otherwise undefined sizes*/
+		<div id="container">
+			<h1 style="font-size:60px">Sveiciens visiem no karantīna atnākušiem  </h1>
+			<p id="content" style="font-size:80px"> ESMU ES Kaut kads teksts kuram nav jēgas</p>
+			<img src="img/LermDoneBB2.png" alt="SlinkisStudents"  style='position:absolute; bottom:0; left:0;' width='450' height='450' alt='' />
+		</div>
+	</body>
+</html>
+```  
+* On error(wrong html input for example or html does not exist) runs 15 secons and outputs blank image in requested format  
+* On syntax error(wrong cutycapt request command for example) just dumps into console cutycapts "help"  
+* CutyCapt is capricious on white spaces in request command can dump into console its help or even do not tell anything...  
+* More info about what command args are for CutyCapt are :  
+```shell  
+$ cutycapt --help
+```  
+  
 Kinda have version of [cutycapt with transperent background](https://github.com/RazdolbayOne/GuidesPull/blob/master/A11Y%20progs/CutyCapt/CutyCapt-master.7z) but it must be compiled and tested  
 ### Installation     
 ```shell  
-$ sudo apt-get update upgrade
+$ sudo apt-get update -y
+$ sudo apt-get upgrade -y
 $ sudo apt-get install cutycapt
 ```  
 ### How to use it  
@@ -34,13 +95,14 @@ Output image will be placed in working directory and THE MOST important CutyCapt
 $ cutycapt --url=http://www.google.com --out=google.png --min-width=1920 --min-height=1080
 ```
 * ***local html page into image***  
-(--url=file:$(FULL_PATH)/$(FILE_FULL_NAME) --out=$(FILES_NAME).$(EXTENSION))   
+(--url=file:${FULL_PATH}/${FILE_FULL_NAME} --out=${FULL_PATH_TO_DEST}/${FILES_NAME}.${EXTENSION})   
 ```shell  
 $ cutycapt --url=file:/home/pi/Desktop/WebPage.html --out=tempPage.png  
-```
-
+```  
+Be aware what if now full path do not given to output cutycapt will "dump" output into dir where console is currently is.
+  
 ### How to use CutyCapt on a Headless server  
-Headless server means what no monitor attachet to it!!!  
+Headless server means what no monitor attachet to it or no X-window also!!!  
 #### Install Xvfb  
 ```shell  
 $ sudo apt-get install xvfb
@@ -61,7 +123,9 @@ $ cutycapt --help
 [main Source | ](http://xmodulo.com/convert-html-web-page-png-image-linux.html) [Potential fix(not tested) of libraries | ](http://edwinhernandez.com/2013/05/26/installing-cutycapt-on-ubuntu-12-0-4/)[ CutyCapt and HEADLESS SERVER | ](https://www.oodlestechnologies.com/blogs/How-to-use-CutyCapt-on-a-headless-server/)
 
 ## VSCode
-MS notepad but with extensions IDE. On Raspbian without Intelsens and debugger..
+MS notepad but with extensions IDE. On Raspbian without Intelsens and debugger..  
+***BE AWARE WHAT THIS IS INSTALLATION FOR VSCODE ON RASPBERRY PI BETTER USE [REMOTE_IDE](https://github.com/RazdolbayOne/GuidesPull/blob/master/Remote_Linux_IDE/README.md#why) 
+ITS BETTER AT ANY CIRCUMSTANCES!!!***  
 ### Installation  
 ```shell  
 1) $ wget https://packagecloud.io/headmelted/codebuilds/gpgkey -O - | sudo apt-key add -
