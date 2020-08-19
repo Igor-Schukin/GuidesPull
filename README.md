@@ -1,5 +1,8 @@
 # GuidesPull
 Guides and guides for [SmartRTU project](https://github.com/RazdolbayOne/SmartRTU)
+  
+<img src="https://imgur.com/UKAuBWl.png" ></img> 
+
 ## Into the rabithole  
 To run project needed:  
 1. [Installed Raspbian OS on Raspberry Pi](https://github.com/RazdolbayOne/GuidesPull/tree/master/RaspberryPi)   
