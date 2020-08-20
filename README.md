@@ -26,6 +26,7 @@ For development:
 4. [***MOST IMPORTANT!!! VSCODE AS REMOTE IDE.***](https://github.com/RazdolbayOne/GuidesPull/blob/master/Remote_Linux_IDE/README.md#why)  
   
 ## Usefull closet 
+* [Pi's trouble-fixes](https://github.com/RazdolbayOne/GuidesPull/blob/master/RaspberryPi/README.md#trouble-fix)  
 * [Learn about Linux shell](https://github.com/RazdolbayOne/GuidesPull/tree/master/Linux)  
 * [CODE STYLE OF PROJECT](https://github.com/RazdolbayOne/GuidesPull/tree/master/code_style)  
 * [A11y libs of project(json++ and CPR)](https://github.com/RazdolbayOne/GuidesPull/tree/master/C%2B%2B#libs)  
